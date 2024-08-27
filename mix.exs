@@ -4,11 +4,11 @@ defmodule IndefiniteArticle.Mixfile do
   def project do
     [app: :indefinite_article,
      version: "0.0.1",
-     elixir: "~> 1.0",
+     elixir: "~> 1.17.2",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps,
-     package: package]
+     deps: deps(),
+     package: package()]
   end
 
   # Configuration for the OTP application
